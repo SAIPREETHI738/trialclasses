@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <title>Back Tracking</title>
+      <link rel="stylesheet" href="./index.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <h1>Backtracking</h1>
+      <div class="container">
+      <p class="special_para">Copyright ©2002 by David Matuszek</p>
+      <p class="special_para">Backtracking is a form of recursion.</p>
+      <p id="unique_para">
+  Conceptually, you start at the root of a tree; the tree probably has some good leaves and some bad leaves, though it may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the root, you choose one of its children to move to, and you keep this up until you get to a leaf.
+</p>
+</div>
+<div class="circle">
+  <p>hi</p>
+</div>
+<p>
+  Suppose you get to a bad leaf. You can backtrack to continue the search for a good leaf by revoking your most recent choice, and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, and try another choice at that node. If you end up at the root with no options left, there are no good leaves to be found.
+</p>
+<p>This needs an example.</p>
+<center>
+  <img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif"/>
+
+</center>
+
+<ol>
+  <li>Starting at Root, your options are A and B.</li>
+  <li>You choose A. At A, your options are C and D.</li>
+  <li>You choose C. C is bad. Go back to A.</li>
+</ol>
+
+<u1>
+  <li>Starting at Root, your options are A and B.</li>
+  <li>You choose A. At A, your options are C and D.</li>
+  <li>You choose C. C is bad. Go back to A.</li>
+</u1>
+
+<p>
+  In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching.)
+</p>
+
+<button>Click Me</button>
+<a href="https://www.prepbytes.com/test/elevation-academy-oct-21/set-2">PrepBytes Test</a>
+<script src="./index.js">
+
+</script>
+
+</body>
+</html>
